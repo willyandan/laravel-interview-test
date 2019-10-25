@@ -13,6 +13,7 @@ return [
     |
     */
 
+    // TODO @laravel-test
     'defaults' => [
         'guard' => 'web',
         'passwords' => 'users',

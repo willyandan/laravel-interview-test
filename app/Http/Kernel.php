@@ -50,6 +50,7 @@ class Kernel extends HttpKernel
      *
      * @var array
      */
+    // TODO @laravel-test
     protected $routeMiddleware = [
         'auth' => \App\Http\Middleware\Authenticate::class,
         'auth.basic' => \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
