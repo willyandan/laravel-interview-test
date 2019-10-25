@@ -1,7 +1,7 @@
 # Laravel Test
 
 
-## Introducon
+## Introduction
 
 It is your first day at a new job and you have to finish implemenng a web API for a calculator service.
 The project contains unit and funconal tests and your goal is to make sure they all pass by wring
