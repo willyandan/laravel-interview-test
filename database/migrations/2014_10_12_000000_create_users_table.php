@@ -13,6 +13,7 @@ class CreateUsersTable extends Migration
      */
     public function up()
     {
+        // start here
         // TODO @laravel-test
         Schema::create('users', function (Blueprint $table) {
             $table->bigIncrements('id');
