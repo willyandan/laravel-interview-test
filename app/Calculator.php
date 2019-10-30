@@ -12,9 +12,9 @@ class Calculator
      * @param int $b
      * @return int
      */
-    public function add()
+    public function add(int $a, int $b)
     {
-        // TODO @laravel-test
+        return $a + $b;
     }
 
     /**
@@ -22,9 +22,9 @@ class Calculator
      * @param int $b
      * @return int
      */
-    public function subtract()
+    public function subtract(int $a, int $b)
     {
-        // TODO @laravel-test
+        return $a - $b;
     }
 
     /**
@@ -32,9 +32,9 @@ class Calculator
      * @param int $b
      * @return int
      */
-    public function multiply()
+    public function multiply(int $a, int $b)
     {
-        // TODO @laravel-test
+        return $a * $b;
     }
 
     /**
@@ -43,9 +43,9 @@ class Calculator
      * @param int $b
      * @return float
      */
-    public function divide()
+    public function divide(int $a, int $b)
     {
-        // TODO @laravel-test
+        return $a / $b;
     }
 
     /**
@@ -54,8 +54,8 @@ class Calculator
      * @param int $b
      * @return int
      */
-    public function modulo()
+    public function modulo(int $a, int $b)
     {
-// TODO @laravel-test
+        return $a % $b;
     }
 }
