@@ -13,16 +13,33 @@ class CalculatorRequest extends FormRequest
      */
     public function rules(): array
     {
-        // TODO @laravel-test
+        return [
+            "a"=>[
+                "required",
+                "integer"
+            ],
+            "b"=>[
+                "required",
+                "integer",
+                function ($attr, $value, $fail) {
+                    $method = explode('@', $this->route()->getActionName())[1];
+                    if($method == 'div' || $method == 'mod'){
+                        if($value == 0){
+                            $fail("$attr can’t be 0");
+                        }
+                    }
+                }
+            ]
+        ];
     }
 
     public function getA(): int
     {
-        // TODO @laravel-test
+        return FormRequest::query('a');
     }
 
     public function getB(): int
     {
-        // TODO @laravel-test
+        return FormRequest::query('b');
     }
 }
