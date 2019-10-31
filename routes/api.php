@@ -14,3 +14,10 @@ use Illuminate\Http\Request;
 */
 
 // TODO @laravel-test
+Route::prefix('calculator')->group(function(){
+    Route::get('add', '\App\Http\Controllers\CalculatorController@add');
+    Route::get('sub', '\App\Http\Controllers\CalculatorController@sub');
+    Route::get('div', '\App\Http\Controllers\CalculatorController@div');
+    Route::get('mod', '\App\Http\Controllers\CalculatorController@mod');
+    Route::get('mul', '\App\Http\Controllers\CalculatorController@mul');
+});
