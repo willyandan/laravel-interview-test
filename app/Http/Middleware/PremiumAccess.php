@@ -15,7 +15,10 @@ class PremiumAccess
      */
     public function handle($request, Closure $next)
     {
-        // TODO @laravel-test
-        return $next($request);
+        if($request->user()->is_premium){
+            return $next($request);
+        }else{
+            abort(403);
+        }
     }
 }

@@ -15,7 +15,7 @@ return [
 
     // TODO @laravel-test
     'defaults' => [
-        'guard' => 'web',
+        'guard' => 'api',
         'passwords' => 'users',
     ],
 
